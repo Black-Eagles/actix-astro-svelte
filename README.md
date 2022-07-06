@@ -1,7 +1,10 @@
 # actix-astro-svelte
 Actix-Web x Astro template with Svelte
 
-## Astro
+After cloning the repo, make sure to run `npm i ` inside `www` and enable the recommended VSCode extensions, then you're ready to go!  
+The template only features the essentials to run the server, obviously developing but also something like reading from a config before starting the server is up to you.
+
+## Astro Stuff
 Inside of your Astro project, you'll see the following folders and files:
 
 ```
