@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "command": "cd ${workspaceFolder}/www && ./node_modules/.bin/astro build",
+            "label": "Build Astro GUI",
+            "type": "shell",
+            "group": "build"
+        },
+        {
+            "command": "cargo build",
+            "label": "Build Actix-Web Server",
+            "type": "shell",
+            "group": "build"
+        },
+        {
+            "command": "cargo build && cd www && ./node_modules/.bin/astro build && cd .. && cargo run",
+            "label": "Build and run main server with GUI",
+            "type": "shell",
+            "group": "build"
+        },
+        {
+            "command": "cargo build --release && cd www && ./node_modules/.bin/astro build",
+            "label": "Compile server and GUI for release",
+            "type": "shell",
+            "group": "build"
+        }
+    ]
+}
